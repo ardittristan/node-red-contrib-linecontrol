@@ -1,0 +1,15 @@
+{
+  "name": "node-red-contrib-linecontrol",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ardittristan",
+  "license": "MIT",
+  "node-red": {
+    "nodes": {
+      "line-router": "router.js"
+    }
+  }
+}

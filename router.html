@@ -1,0 +1,27 @@
+<script type="text/javascript">
+  RED.nodes.registerType("line-router", {
+    category: "common",
+    color: "#a6bbcf",
+    defaults: {
+      name: { value: "" },
+    },
+    style: "compact",
+    inputs: 1,
+    outputs: 1,
+    icon: "inject.png",
+    label: function () {
+      return this.name || ">";
+    },
+  });
+</script>
+
+<script type="text/x-red" data-template-name="line-router">
+  <div class="form-row">
+    <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+    <input type="text" id="node-input-name" placeholder="Name">
+  </div>
+</script>
+
+<script type="text/x-red" data-help-name="line-router">
+  <p>A simple node that can be used to reroute the lines from nodes.</p>
+</script>
